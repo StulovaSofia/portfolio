@@ -406,12 +406,9 @@ body {
 }
 
 .stack__item:active {
-  color: #000
+  color: #ffffff;
 }
 
-.stack__item:active:after {
-  background: transparent;
-}
 
 .stack__item:hover:before {
   opacity: 1;
@@ -441,8 +438,13 @@ body {
   }
 }
 
+.projects__item img {
+  height: 260px;
+  width: 100%;
+}
+
 .stack__img {
-  width: 48px;
+  width: 38px;
 }
 
 .stack__text {
@@ -456,4 +458,121 @@ body {
 
 .stack {
   margin-bottom: 40px;
+}
+
+@media (max-width: 1200px) {
+  .projects__list {
+    grid-template-columns: repeat(2, 450px);
+  }
+  .about-me__img {
+    max-width: 46%;
+  }
+}
+
+@media (max-width: 900px) {
+  .projects__list {
+    grid-template-columns: repeat(1, 68%);
+  }
+  .header__top {
+    padding: 0;
+    gap: 0;
+  }
+  .header__img {
+    height: 469px;
+  }
+  .header__inner {
+    align-items: flex-start;
+  }
+  .stack__list {
+    margin: 10px 0;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .experience__inner {
+    flex-direction: column;
+  }
+  .experience__content {
+    max-width: 100%;
+  }
+  .header__top .header__item {
+    width: 158px;
+  }
+}
+
+@media (max-width: 720px) {
+  .about-me__content {
+    flex-direction: column;
+  }
+  .header__inner {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0 20px;
+  }
+  .header__top {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .title {
+    font-size: 32px;
+    line-height: 38px;
+    margin-bottom: 17px;
+  }
+  .stack__list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .projects__list {
+    grid-template-columns: repeat(1, 98%);
+  }
+}
+
+@media (max-width: 460px) {
+  .header__title {
+    font-size: 29px;
+  }
+  .header__subtitle {
+    font-size: 18px;
+  }
+  .header__img {
+    height: auto;
+  }
+  .header__top .header__item {
+    margin: 10px;
+  }
+  .about-me__img {
+    display: none;
+  }
+  .about-me__text {
+    font-size: 18px;
+    gap: 11px;
+    padding: 18px;
+    text-align: start;
+  }
+  .experience__img {
+    max-width: 53px;
+  }
+  .projects__item img {
+    height: 200px;
+  }
+  .experience__content {
+    flex-direction: column;
+  }
+  .stack, .experience {
+    margin-bottom: 20px;
+  }
+  .header__top .header__item {
+    font-size: 16px;
+    margin: 6px;
+  }
+  .container {
+    padding: 0 10px;
+  }
+  .header__inner {
+    align-items: self-start;
+  }
+  .header__content {
+    margin-left: 18px;
+  }
 }
