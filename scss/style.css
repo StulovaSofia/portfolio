@@ -618,14 +618,6 @@ body {
   .projects__list {
     grid-template-columns: repeat(1, 100%);
   }
-  .select {
-    gap: 10px;
-  }
-  .select__item {
-    gap: 4px;
-    padding: 9px 14px;
-    font-size: 18px;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */
