@@ -33,10 +33,6 @@ dd {
   margin: 0;
 }
 
-ul[class] {
-  list-style: none;
-}
-
 img {
   max-width: 100%;
   display: block;
@@ -216,6 +212,7 @@ body {
   border-radius: 4px;
   font-size: 18px;
   font-weight: 700;
+  width: 250px;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   transition: background-color 0.2s linear, color 0.2s linear;
 }
@@ -227,6 +224,120 @@ body {
 
 .projects {
   padding-bottom: 40px;
+}
+
+.projects-list-title {
+  font-size: 20px;
+}
+
+.projects-list-title::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  margin: 16px 0;
+  background-color: #7f5af0;
+}
+
+.card__list li::marker {
+  color: #7f5af0;
+}
+
+.card__list li {
+  display: list-item;
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+.card__list {
+  margin-left: 30px;
+}
+
+.experience__inner {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.experience {
+  margin-bottom: 40px;
+}
+
+.experience__img {
+  max-width: 80px;
+}
+
+.experience__content {
+  font-size: 16px;
+  font-weight: 300;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 16px;
+  max-width: 580px;
+  width: 100%;
+}
+
+.experience__content h5 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.experience__content p {
+  font-size: 15px;
+}
+
+.experience__list {
+  list-style: none inside none;
+  letter-spacing: 1px;
+}
+
+.experience__title {
+  padding-bottom: 4px;
+  display: inline-block;
+  font-size: 1.125rem;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #7f5af0;
+}
+
+.stack__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.stack__list {
+  margin: 32px 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 48px;
+  list-style: none;
+}
+
+.stack__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.stack__img {
+  width: 48px;
+}
+
+.stack__text {
+  letter-spacing: 1px;
+}
+
+.stack__subtitle {
+  letter-spacing: 1px;
+  font-size: clamp(1.5rem, 4vw, 2rem);
+}
+
+.stack {
+  margin-bottom: 40px;
 }
 
 /*# sourceMappingURL=style.css.map */
