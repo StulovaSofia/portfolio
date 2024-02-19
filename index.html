@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Портфолио</title>
     <link rel="icon" href="images/portfolio.png" type="image/x-icon">
     <link rel="stylesheet" href="scss/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,11 +33,11 @@
                 <div class="about-me__content">
                     <img src="images/about-me.svg" alt="" class="about-me__img" draggable="false">
                     <p class="about-me__text">
-                        <span> Я Frontend-разработчик из Новосибирска, которая обожает разрабатывать разные сайты.</span>
-                        <span> Для меня разработка и программирование - не просто работа, а хобби, которое мне интересно изучать и
+                        <span> Я - молодой фронтенд-разработчик из Новосибирска, и мой интерес к созданию уникальных веб-сайтов только возрастает с каждым проектом. </span>
+                        <span>  Для меня программирование - не просто рабочая деятельность, а хобби, которое мне интересно изучать и
                     уделять ему свое время. </span>
-                        <span> Мне 19 лет и я горю этим делом уже более 2-х лет. Сейчас заканчиваю колледж НГТУ по специальности
-                    "Программирование в компьютерных системах". </span>
+                        <span> Мне 19 лет, но уже более двух лет я активно учусь и тружусь в мире веб-разработки.
+                            Сейчас заканчиваю колледж НГТУ по специальности "Программирование в компьютерных системах". </span>
                     </p>
                 </div>
             </div>
@@ -166,10 +166,10 @@
             <div class="projects">
                 <h2 class="title">Проекты</h2>
                 <div class="select">
-                    <p class="select__item select__item--active">Верстка</p>
-                    <p class="select__item">Angular</p>
+                    <p class="select__item select__item--active" id="layout">Верстка</p>
+                    <p class="select__item" id="angular">Angular</p>
                 </div>
-                <div class="projects__list">
+                <div class="projects__list" id="layoutList">
                     <div class="projects__item">
                         <img src="images/work4.jpg" alt="">
                         <div class="projects__content">
@@ -182,7 +182,7 @@
                                 <li>JS</li>
                             </ul>
                             <a target="_blank" href="https://stulovasofia.github.io/Sensus/" class="projects__btn">
-                                Посмотреть вживую</a>
+                                Посмотреть</a>
                         </div>
                     </div>
                     <div class="projects__item" data-aos="flip-up">
@@ -197,7 +197,7 @@
                                 <li>JS</li>
                             </ul>
                             <a target="_blank" href="https://domsaitov.ru/novosibirsk/" class="projects__btn">
-                                Посмотреть вживую</a>
+                                Посмотреть</a>
                         </div>
                     </div>
                     <div class="projects__item" data-aos="flip-up">
@@ -211,7 +211,41 @@
                                 <li>SCSS</li>
                             </ul>
                             <a target="_blank" href="https://stulovasofia.github.io/hedgehog/" class="projects__btn">
-                                Посмотреть вживую</a>
+                                Посмотреть</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="projects__list" id="angularList">
+                    <div class="projects__item">
+                        <img src="images/casheers.jpg" alt="">
+                        <div class="projects__content">
+                            <p class="projects__title">Сайт Casheers (Рабочий проект)</p>
+                            <p class="projects__text">Сайт для покупки билетов на мероприятия в Таиланде</p>
+                            <h4 class="projects-list-title">Стек:</h4>
+                            <ul class="card__list">
+                                <li>HTML</li>
+                                <li>SCSS</li>
+                                <li>TS</li>
+                                <li>Angular</li>
+                            </ul>
+                            <a target="_blank" href="https://casheers.com/" class="projects__btn">
+                                Посмотреть</a>
+                        </div>
+                    </div>
+                    <div class="projects__item" data-aos="flip-up">
+                        <img src="images/thai-voa.jpg" alt="">
+                        <div class="projects__content">
+                            <p class="projects__title">Сайт Thai Voa (Рабочий проект)</p>
+                            <p class="projects__text">Многостраничный сайт для оформления визы в Таиланд</p>
+                            <h4 class="projects-list-title">Стек:</h4>
+                            <ul class="card__list">
+                                <li>HTML</li>
+                                <li>SCSS</li>
+                                <li>TS</li>
+                                <li>Angular</li>
+                            </ul>
+                            <a target="_blank" href="https://thaivoa.com/en/" class="projects__btn">
+                                Посмотреть</a>
                         </div>
                     </div>
                 </div>
@@ -219,7 +253,7 @@
         </div>
     </main>
 </div>
-
+<script src="js/main.js"></script>
 </body>
 
 </html>
