@@ -384,7 +384,7 @@ body {
   gap: 10px;
   padding: 16px;
   border: 1px solid #7f5af0;
-  border-radius: 8px;
+  border-radius: 9px;
   position: relative;
 }
 
@@ -402,7 +402,7 @@ body {
   animation: glowing 20s linear infinite;
   opacity: 0;
   transition: opacity .3s ease-in-out;
-  border-radius: 10px;
+  border-radius: 8px;
 }
 
 .stack__item:active {
@@ -423,7 +423,7 @@ body {
   background: #202020;
   left: 0;
   top: 0;
-  border-radius: 10px;
+  border-radius: 8px;
 }
 
 @keyframes glowing {
