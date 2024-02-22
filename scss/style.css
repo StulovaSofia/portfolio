@@ -409,6 +409,62 @@ body {
   border-bottom: 2px solid #7f5af0;
 }
 
+.initiative__content {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.initiative__subtitle {
+  font-size: 20px;
+  line-height: 42px;
+  text-align: justify;
+}
+
+.initiative__list {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 15px;
+}
+
+.initiative__text {
+  max-width: 500px;
+}
+
+.initiative__img {
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  max-width: 300px;
+}
+
+.initiative__item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: 1px solid #7f5af0;
+  padding: 15px 20px;
+  border-radius: 20px;
+  justify-content: space-around;
+  height: 200px;
+  text-align: justify;
+}
+
+.initiative__item p:first-child {
+  letter-spacing: 1px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.initiative__item p:last-child {
+  letter-spacing: 1px;
+  font-size: 16px;
+}
+
 .stack__inner {
   display: flex;
   flex-direction: column;
